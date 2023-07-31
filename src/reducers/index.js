@@ -54,12 +54,19 @@ const updateCartItem = (product, item = {}, quantity) => {
   };
 };
 
-const updateOrder = (state, productId, quantity) => {
+const updateOrder = (state, productId, quantity, deleteAll = false) => {
   const { products, cartItems, orderTotal } = state;
 
   const product = products.find(({id}) => id === productId);
   const itemIndex = cartItems.findIndex(({id}) => id === productId);
   const item = cartItems[itemIndex];
+
+  if (
+    (!deleteAll && item?.count === 1 && quantity === -1) || 
+    (!deleteAll && item?.count === 5 && quantity === 1)) 
+  {
+    quantity = 0;
+  }
 
   const newItem = updateCartItem(product, item, quantity);
   return {
@@ -109,7 +116,7 @@ const reducer = (state = initialState, action) => {
 
     case 'REMOVE_ALL_PRODUCTS_FROM_CART':
       const item = state.cartItems.find(({id}) => id === action.payload);
-      return updateOrder(state, action.payload, -item.count);
+      return updateOrder(state, action.payload, -item.count, true);
     
     case 'CLEAR_CART':
       return {

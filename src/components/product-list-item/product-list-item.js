@@ -7,14 +7,13 @@ const ProductListItem = ({ product, addProductToCart }) => {
   const { title, description, price, coverImage } = product;
   return (
     <div className="product-list-item">
-      <div className="product-cover">
+      <div className="product-cover" onClick={addProductToCart}>
         <img src={images[coverImage]} alt="cover" className="certificate"></img>
         <div className='product-icons'>
           <img 
             src={images.addToCart} 
             alt="cover" 
             className="add-to-cart-icon" 
-            onClick={addProductToCart}
           />
           <img 
             src={images.like} 

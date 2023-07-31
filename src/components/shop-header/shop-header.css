@@ -1,0 +1,30 @@
+.shop-header {
+  height: 75px;
+  background-color: #CCCCCC;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.shop-header-navigation {
+  display: flex;
+}
+
+.shop-header-link {
+  display: flex;
+}
+
+.shop-header .shopping-cart {
+  text-decoration: none;
+  align-self: center;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}
+
+.shop-header, .shopping-cart {
+  color: #FFFFFF;
+}
+
+.shopping-cart {
+  font-size: 1.3rem;
+}

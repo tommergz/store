@@ -12,7 +12,6 @@ const ShoppingCartForm = ({total}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Name: ${formData.name}, Phone: ${formData.email}, Adress: ${formData.message}`);
   };
 
   return (

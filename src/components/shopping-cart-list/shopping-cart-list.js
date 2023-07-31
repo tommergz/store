@@ -72,7 +72,12 @@ const ShoppingCartList = ({ items, onIncrease, onDecrease, onDelete, onClear }) 
         { items.map(renderRow) }
       </div>
       <div className='shopping-cart-footer'>
-        <button className='white-btn' onClick={onClear}>Очистить корзину</button>
+        {
+          items.length > 0 &&
+          <>
+            <button className='white-btn' onClick={onClear}>Очистить корзину</button>
+          </>
+        }
         <Link to="/">
           <button className='black-btn'>Продолжить покупки</button>
         </Link>

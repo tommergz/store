@@ -9,19 +9,19 @@ import './product-list.css';
 
 const ProductList = ({ products, addProductToCart }) => {
   return (
-    <ul className="product-list">
+    <div className="product-list">
       {
         products.map((product) => {
-          return (
-            <li key={product.id}>
-              <ProductListItem
-                product={product}
-                addProductToCart={() => addProductToCart(product.id)}/>
-            </li>
+          return ( 
+            <ProductListItem
+              key={product.id}
+              product={product}
+              addProductToCart={() => addProductToCart(product.id)}
+            />           
           );
         })
       }
-    </ul>
+    </div>
   );
 };
 
@@ -29,12 +29,14 @@ const ProductListContainer = ({products, addProductToCart, sortProducts}) => {
 
     return (
       <div>
-        <select className='sorting-select' onChange={(e) => sortProducts(e.target.value)}>
-          <option value="NEWEST" defaultValue="NEWEST">Порядок: сперва новые</option>
-          <option value="OLDEST">Порядок: сперва старые</option>
-          <option value="CHEAPEST">Порядок: сперва дешевле</option>
-          <option value="MOST_EXPENSIVE">Порядок: сперва дороже</option>
-        </select>
+        <div className='sorting-selection-container'>
+          <select className='sorting-select' onChange={(e) => sortProducts(e.target.value)}>
+            <option value="NEWEST" defaultValue="NEWEST">Порядок: сперва новые</option>
+            <option value="OLDEST">Порядок: сперва старые</option>
+            <option value="CHEAPEST">Порядок: сперва дешевле</option>
+            <option value="MOST_EXPENSIVE">Порядок: сперва дороже</option>
+          </select>
+        </div>
         <ProductList products={products} addProductToCart={addProductToCart}/>
       </div>
     );

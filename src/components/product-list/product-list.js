@@ -30,12 +30,14 @@ const ProductListContainer = ({products, addProductToCart, sortProducts}) => {
     return (
       <div>
         <div className='sorting-selection-container'>
-          <select className='sorting-select' onChange={(e) => sortProducts(e.target.value)}>
-            <option value="NEWEST" defaultValue="NEWEST">Порядок: сперва новые</option>
-            <option value="OLDEST">Порядок: сперва старые</option>
-            <option value="CHEAPEST">Порядок: сперва дешевле</option>
-            <option value="MOST_EXPENSIVE">Порядок: сперва дороже</option>
+          <div class="select-wrapper">
+            <select id="select" name="select" className='sorting-select' onChange={(e) => sortProducts(e.target.value)}>
+              <option value="NEWEST" defaultValue="NEWEST">Порядок: сперва новые</option>
+              <option value="OLDEST">Порядок: сперва старые</option>
+              <option value="CHEAPEST">Порядок: сперва дешевле</option>
+              <option value="MOST_EXPENSIVE">Порядок: сперва дороже</option>
           </select>
+          </div>
         </div>
         <ProductList products={products} addProductToCart={addProductToCart}/>
       </div>

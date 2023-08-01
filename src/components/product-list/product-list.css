@@ -15,6 +15,17 @@
 }
 .sorting-selection-container select {
   border-radius: 20px;
+  background-image: url("../../assets/images/caret-down.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 17px) center;
+  padding: 10px 45px 10px 20px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 @media (max-width: 834px) {

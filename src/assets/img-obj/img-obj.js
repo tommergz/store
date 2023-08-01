@@ -10,6 +10,7 @@ import addToCart from '../images/add-to-cart.svg';
 import like from '../images/like.svg';
 import store from '../images/store.svg';
 import shoppingCart from '../images/shopping-cart.svg';
+import caretDown from '../images/caret-down.svg';
 
 const images = {
   'tartan': tartan,
@@ -23,7 +24,8 @@ const images = {
   'addToCart': addToCart,
   'like': like,
   'store': store,
-  'shoppingCart': shoppingCart
+  'shoppingCart': shoppingCart,
+  'caretDown': caretDown
 }
 
 export default images;

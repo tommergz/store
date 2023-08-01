@@ -36,6 +36,7 @@
 
 .product-list-item .product-cover img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 .product-list-item .product-details {
@@ -60,4 +61,5 @@
     font-size: 14px;
     color: #888888;
     margin: 5px 0;
+    padding-right: 15px;
 }

@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     title: 'Кровать TARTAN',
-    description: 'Описание',
+    description: 'Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.',
     price: 120000,
     coverImage: 'tartan',
     date: "Mar 16 2023 10:00:00 AM"
@@ -10,7 +10,7 @@ export const data = [
   {
     id: 2,
     title: 'Кресло VILORA',
-    description: 'Описание',
+    description: 'Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань. ',
     price: 21000,
     coverImage: 'vilora',
     date: "Mar 15 2023 10:00:00 AM"
@@ -18,7 +18,7 @@ export const data = [
   {
     id: 3,
     title: 'Стол MENU',
-    description: 'Описание',
+    description: 'Европейский дуб - отличается особой прочностью и стабильностью.',
     price: 34000,
     coverImage: 'menu',
     date: "Mar 14 2023 10:00:00 AM"
@@ -26,7 +26,7 @@ export const data = [
   {
     id: 4,
     title: 'Диван ASKESTA',
-    description: 'Описание',
+    description: 'Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать',
     price: 68000,
     coverImage: 'menu',
     date: "Mar 17 2023 10:00:00 AM"
@@ -34,7 +34,7 @@ export const data = [
   {
     id: 5,
     title: 'Кресло LUNAR',
-    description: 'Описание',
+    description: 'Прекрасно переносит солнечные лучи, перепады влажности и любые осадки',
     price: 40000,
     coverImage: 'menu',
     date: "Mar 18 2023 10:00:00 AM"
@@ -42,7 +42,7 @@ export const data = [
   {
     id: 6,
     title: 'Шкаф NASTAN',
-    description: 'Описание',
+    description: 'Мебель может быть оснащена разнообразными системами подсветки.',
     price: 80000,
     coverImage: 'menu',
     date: "Mar 19 2023 10:00:00 AM"

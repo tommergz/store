@@ -8,6 +8,8 @@ import incArrow from '../images/inc-arrow.svg';
 import decArrow from '../images/dec-arrow.svg';
 import addToCart from '../images/add-to-cart.svg';
 import like from '../images/like.svg';
+import store from '../images/store.svg';
+import shoppingCart from '../images/shopping-cart.svg';
 
 const images = {
   'tartan': tartan,
@@ -19,7 +21,9 @@ const images = {
   'incArrow': incArrow,
   'decArrow': decArrow,
   'addToCart': addToCart,
-  'like': like
+  'like': like,
+  'store': store,
+  'shoppingCart': shoppingCart
 }
 
 export default images;

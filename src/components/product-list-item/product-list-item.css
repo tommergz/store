@@ -1,65 +1,76 @@
 .product-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 15px 0;
 }
-
-.product-cover {
+.product-list-item .product-cover {
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 15px 15px 5px;
 }
-
-.product-icons {
+.product-list-item .product-cover img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.product-list-item .product-cover .product-icons {
   display: none;
   position: absolute;
   top: 5px;
   right: 0px;
   margin-right: 5px;
 }
-
-.add-to-cart-icon {
+.product-list-item .product-cover .add-to-cart-icon {
   height: 20px;
   width: 20px;
   margin-left: 10px;
   cursor: pointer;
 }
-
-.product-list-item .product-cover {
-  flex-shrink: 0;
-  margin: 15px 15px 5px;
-}
-
-.product-cover:hover {
-  .product-icons {
-    display: flex;
-  }
-}
-
-.product-list-item .product-cover img {
-  max-width: 100%;
-  cursor: pointer;
-}
-
 .product-list-item .product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 15px;
   padding-bottom: 10px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-
 .product-list-item .product-details .product-title {
-  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
 }
-
-.product-list-item .product-details .product-price {
-  font-size: 1.4rem;
-}
-
-.product-description {
+.product-list-item .product-details .product-description {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-    font-size: 14px;
-    color: #888888;
-    margin: 5px 0;
-    padding-right: 15px;
+  font-size: 14px;
+  color: #888888;
+  margin: 5px 0;
+  padding-right: 15px;
+  height: 50px;
+  overflow: auto;
+}
+.product-list-item .product-details .product-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.product-cover:hover .product-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

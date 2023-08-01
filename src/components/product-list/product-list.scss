@@ -6,15 +6,11 @@
 
 .sorting-selection-container {
   margin: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-.sorting-selection-container select {
-  border-radius: 20px;
+  justify-content: flex-end;
+  select {
+    border-radius: 20px;
+  }
 }
 
 @media (max-width: 834px) {

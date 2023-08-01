@@ -28,7 +28,7 @@ export const data = [
     title: 'Диван ASKESTA',
     description: 'Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать',
     price: 68000,
-    coverImage: 'menu',
+    coverImage: 'askesta',
     date: "Mar 17 2023 10:00:00 AM"
   },
   {
@@ -36,7 +36,7 @@ export const data = [
     title: 'Кресло LUNAR',
     description: 'Прекрасно переносит солнечные лучи, перепады влажности и любые осадки',
     price: 40000,
-    coverImage: 'menu',
+    coverImage: 'lunar',
     date: "Mar 18 2023 10:00:00 AM"
   },
   {
@@ -44,7 +44,7 @@ export const data = [
     title: 'Шкаф NASTAN',
     description: 'Мебель может быть оснащена разнообразными системами подсветки.',
     price: 80000,
-    coverImage: 'menu',
+    coverImage: 'nastan',
     date: "Mar 19 2023 10:00:00 AM"
   }
 ];

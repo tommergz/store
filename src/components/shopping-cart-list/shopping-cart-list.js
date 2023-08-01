@@ -17,7 +17,7 @@ const ShoppingCartList = ({ items, onIncrease, onDecrease, onDelete, onClear }) 
     return (
       <div className='shopping-cart-container'>
         <div key={id} className='shopping-cart-item'>
-          <div className='shoping-cart-product-cover'>
+          <div className='shopping-cart-product-cover'>
             <img src={images[coverImage]} alt="cover" className="certificate"></img>
           </div>
           <div className='product-details'>
@@ -30,12 +30,13 @@ const ShoppingCartList = ({ items, onIncrease, onDecrease, onDelete, onClear }) 
             <p className='shopping-cart-item-price'>
               {total} руб.
             </p>
-            <div className='shpoing-cart-item-buttons'>
+            <div className='shopping-cart-item-buttons'>
               <a href='#'>Избранные</a>
               <a
                 href='#'
                 onClick={() => onDelete(id)}
-                className="btn">
+                className="btn"
+              >
                 Удалить
               </a>
             </div>

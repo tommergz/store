@@ -1,0 +1,78 @@
+.shopping-cart-modal-main-container {
+  width: fit-content;
+  padding: 20px;
+  border: 1px solid #000000;
+  .shopping-cart-modal-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .shopping-cart-modal-item {
+      display: flex;
+      .shopping-cart-modal-product-cover {
+        flex-shrink: 0;
+        width: 120px;
+        margin-right: 30px;
+        img {
+          max-width: 100%;
+        }
+      }
+      .product-details {
+        font-family: "Montserrat", sans-serif;
+        .shopping-cart-modal-item-title {
+          margin: 0;
+          font-weight: 500;
+          font-size: 24px;
+        }
+        .shopping-cart-modal-item-description {
+          width: 300px;
+          font-weight: 400;
+          font-size: 14px;
+          color: #888888;
+          margin: 5px 0;
+        }
+        .shopping-cart-modal-item-price {
+          font-weight: 500;
+          font-size: 16px;
+        }
+        .shopping-cart-modal-item-buttons a {
+          text-decoration: none;
+          color: #000000;
+          border-bottom: 1px solid #000000;
+          margin-right: 30px;
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+    .shopping-cart-modal-counter {
+      display: flex;
+      align-items: center;
+      width: 50px;
+      height: 40px;
+      background-color: #F7F6F6;
+      border-radius: 5px;
+      .counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .shopping-cart-modal-buttons {
+        display: flex;
+        flex-direction: column;
+      }
+      .shopping-cart-modal-buttons .btn {
+        appearance: none;
+        border: 0;
+        background: #F7F6F6;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+}

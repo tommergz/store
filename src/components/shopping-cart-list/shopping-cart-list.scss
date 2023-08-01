@@ -15,7 +15,7 @@
     padding: 20px 0;
     .shopping-cart-item {
       display: flex;
-      .shoping-cart-product-cover {
+      .shopping-cart-product-cover {
         flex-shrink: 0;
         width: 120px;
         margin-right: 30px;
@@ -41,7 +41,7 @@
           font-weight: 500;
           font-size: 16px;
         }
-        .shpoing-cart-item-buttons a {
+        .shopping-cart-item-buttons a {
           text-decoration: none;
           color: #000000;
           border-bottom: 1px solid #000000;
@@ -139,7 +139,7 @@
     flex-direction: column;
   }
 
-  .shoping-cart-product-cover {
+  .shopping-cart-product-cover {
     display: none;
   }
 

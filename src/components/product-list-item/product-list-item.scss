@@ -43,6 +43,8 @@
       color: #888888;
       margin: 5px 0;
       padding-right: 15px;
+      height: 50px;
+      overflow: auto;
     }
     .product-price {
       font-family: 'Montserrat', sans-serif;
@@ -55,5 +57,17 @@
 .product-cover:hover {
   .product-icons {
     display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list-item .product-details .product-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list-item {
+    margin-bottom: 0;
   }
 }

@@ -43,15 +43,20 @@ const ShoppingCartModal = ({ items, onDelete, showModal, setModal }) => {
       </div>
     );
   };
-  items.splice(2);
+
+  const itemsForModal = [...items].splice(0, 2);
+ 
   return (
     <>
       {
         showModal && items.length > 0 ? 
-        <div               onMouseEnter={() => setModal(true)}
-        onMouseLeave={() => setModal(false)} className="shopping-cart-modal-main-container">
+        <div               
+          onMouseEnter={() => setModal(true)}
+          onMouseLeave={() => setModal(false)} 
+          className="shopping-cart-modal-main-container"
+        >
           <div className='shopping-cart-modal-list'>
-            { items.map(renderRow) }
+            { itemsForModal.map(renderRow) }
           </div>
         </div> : ''
       }
